@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kidz Time</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="lib/semantic/semantic.css">
+	<link rel="stylesheet" href="lib/semantic/components/accordion.css">
+	<link rel="stylesheet" href="./assets/fonts//stylesheet.css">
+	<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+	<!-- <div class="ui large top fixed menu transition inverted secondary">
+		<div class="ui container inverted">
+			<div class="item">
+				<img class="ui small image" src="./lib/images/logo.png">
+			</div>
+			<a class="item" href="#!/main">Bad To school</a>
+			<a class="item" href="#!/view2">Dinnerwares</a>
+			<a class="item">Water bottles</a>
+			<a class="item">School Accessories</a>
+			<a class="item">Push & toys</a>
+			<div class="right menu">
+				<div class="item">
+					<a class="ui button">Log in</a>
+				</div>
+				<div class="item">
+					<a class="ui primary button">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="app-header ui secondary container menu inverted">
+		<div class="item">
+			<img class="ui small image" src="./assets/images/logo.png">
+		</div>
+		<a class="item">BAG TO SCHOOL</a>
+		<a class="item">DINNERWARES</a>
+		<a class="item">WATER BOTTLES</a>
+		<a class="item">SCHOOL ACCESSORIES</a>
+		<a class="item">PUSH & TOYS</a>
+		<div class="ui right menu list secondary mini">
+			<div class="ui dropdown item">
+				CHARACTERS <i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item">c1</a>
+					<a class="item">c2</a>
+					<a class="item">c3</a>
+				</div>
+			</div>
+			<div class="item">
+				<i class="search link icon"></i>
+				<!-- <div class="ui icon input">
+				</div> -->
+			</div>
+			<div class="item">
+				<i class="shopping cart link icon"></i> 2
+			</div>
+			<div class="item">
+				<img class="ui avatar image" src="/assets/images/profile.png">
+				<div class="content">Lucy</div>
+				<!-- <img class="ui mini circular image" src="/lib/images/profile.png">
+				<div class="content">Lucy</div> -->
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+	<div ng-view></div>
+
+	<!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/semantic/semantic.js"></script>
+	<script src="lib/angular/angular.js"></script>
+	<script src="lib/angular-route/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="main//main.js"></script>
+	<script src="view2/view2.js"></script>
+</body>
+
+</html>

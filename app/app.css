@@ -1,0 +1,16 @@
+body {
+  background-color: #5E5996;
+}
+
+.inverted {
+  background-color: transparent !important;
+}
+
+* {
+  /* font-family: 'affogatomedium' !important; */
+}
+
+.app-header, .app-header .a.item {
+  font-family: 'affogatomedium' !important;
+  font-size: 13px !important;
+}
