@@ -1,5 +1,5 @@
 body {
-  background-color: #5E5996;
+  /* background-color: #5E5996; */
 }
 
 .inverted {
@@ -9,8 +9,45 @@ body {
 * {
   /* font-family: 'affogatomedium' !important; */
 }
-
+.app-header {
+  background-color: #5E5996 !important;
+  width: 100%;
+}
 .app-header, .app-header .a.item {
   font-family: 'affogatomedium' !important;
-  font-size: 13px !important;
+  /* font-size: 13px !important; */
+}
+
+.ui.header.huge.red {
+  /* font-family: 'affogatoblack' !important;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; */
+}
+.ui.header.huge.red span {
+
+}
+
+.m-list .ui.header.huge.red {
+  font-family: 'affogatobold' !important;
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+}
+
+.m-list .ui.header{
+  font-family: 'affogatobold' !important;
+}
+
+.m-list__num {
+  font-family: 'affogatobold' !important;
+  text-transform: uppercase;
+  /* letter-spacing: -12px; */
+  display: inline-block;
+  max-width: 20px;
+  font-size: 6rem;
+  opacity: 0.5;
+  line-height: 0em;
+}
+
+.m-list .row:nth-child(even) .column:first-child {
+  order: 2;
 }
