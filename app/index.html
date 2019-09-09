@@ -19,125 +19,13 @@
 </head>
 
 <body>
-	<!-- <div class="ui large top fixed menu transition inverted secondary">
-		<div class="ui container inverted">
-			<div class="item">
-				<img class="ui small image" src="./lib/images/logo.png">
-			</div>
-			<a class="item" href="#!/main">Bad To school</a>
-			<a class="item" href="#!/view2">Dinnerwares</a>
-			<a class="item">Water bottles</a>
-			<a class="item">School Accessories</a>
-			<a class="item">Push & toys</a>
-			<div class="right menu">
-				<div class="item">
-					<a class="ui button">Log in</a>
-				</div>
-				<div class="item">
-					<a class="ui primary button">Sign Up</a>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<div class="app-header ui container menu large top inverted">
-		<div class="item">
-			<img class="ui small image" src="./assets/images/logo.png">
-		</div>
-		<a class="item">BAG TO SCHOOL</a>
-		<a class="item">DINNERWARES</a>
-		<a class="item">WATER BOTTLES</a>
-		<a class="item">SCHOOL ACCESSORIES</a>
-		<a class="item">PUSH & TOYS</a>
-		<div class="ui right menu list secondary mini">
-			<div class="ui dropdown item">
-				CHARACTERS <i class="dropdown icon"></i>
-				<div class="menu">
-					<a class="item">c1</a>
-					<a class="item">c2</a>
-					<a class="item">c3</a>
-				</div>
-			</div>
-			<div class="item">
-				<i class="search link icon"></i>
-				<!-- <div class="ui icon input">
-				</div> -->
-			</div>
-			<div class="item">
-				<i class="shopping cart link icon"></i> 2
-			</div>
-			<div class="item">
-				<img class="ui avatar image" src="/assets/images/profile.png">
-				<div class="content">Lucy</div>
-				<!-- <img class="ui mini circular image" src="/lib/images/profile.png">
-				<div class="content">Lucy</div> -->
-			</div>
-		</div>
-	</div>
 
-	<div class="ui two column doubling stackable grid container m-list">
-		<div class="row">
-			<div class="left aligned eight wide column">
-				<h3 class="ui header huge red">
-					<span class="m-list__num">1</span>Your kids well being is our top priority.
-				</h3>
-				<div class="description">
-					<h2 class="ui blue header">That's why we are on the side of coution when it comes to our bottle component.</h2>
-				</div>
-			</div>
-			<div class="eight wide column">
-				<img class="ui large image" src="assets/images/list-adv-1.png">
-			</div>
-		</div>
-		<div class="row">
-			<div class="right aligned eight wide column">
-				<h3 class="ui header huge red">
-					<span class="m-list__num">2</span>From thermoplastic to korean ecozen.
-				</h3>
-				<div class="description">
-					<h2 class="ui blue header">That's why we are on the side of coution when it comes to our bottle component.</h2>
-				</div>
-			</div>
-			<div class="eight wide column">
-				<img class="ui large image" src="assets/images/list-adv-2.png">
-			</div>
-		</div>
-		<div class="row">
-			<div class="left aligned eight wide column">
-				<h3 class="ui header huge red">
-					<span class="m-list__num">3</span>
-					Your kids well being is our top priority.
-				</h3>
-				<div class="description">
-					<h2 class="ui blue header">That's why we are on the side of coution when it comes to our bottle component.</h2>
-				</div>
-			</div>
-			<div class="eight wide column">
-				<img class="ui large image" src="assets/images/list-adv-3.png">
-			</div>
-		</div>
-		<div class="row">
-			<div class="left aligned eight wide column">
-				<h3 class="ui header huge red">
-						<span class="m-list__num">4</span>
-						Your kids well being is our top priority.
-				</h3>
-				<div class="description">
-					<h2 class="ui blue header">That's why we are on the side of coution when it comes to our bottle component.</h2>
-				</div>
-			</div>
-			<div class="eight wide column">
-				<img class="ui large image" src="assets/images/list-adv-4.png">
-			</div>
-		</div>
-	</div>
-
-
-
+	<app-header></app-header>
 	<!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-	<div ng-view></div>
+	<div  style="margin-top: 100px" ng-view></div>
 
 	<!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
@@ -149,6 +37,7 @@
 	<script src="app.js"></script>
 	<script src="main//main.js"></script>
 	<script src="view2/view2.js"></script>
+	<script src="components/header/header.js"></script>
 </body>
 
 </html>
