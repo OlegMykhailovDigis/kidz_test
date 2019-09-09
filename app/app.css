@@ -127,6 +127,8 @@ ul[rn-carousel] {
 }
 .app-carousel ul[rn-carousel] {
   height: calc(100vw / 2.66);
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .app-carousel .rn-carousel-control.rn-carousel-control-next:before {
@@ -168,4 +170,25 @@ ul[rn-carousel] {
   font-family: 'affogatobold' !important;
   font-size: 2.3em;
   letter-spacing: -0.5px;
+}
+
+.app-carousel .rn-carousel-indicator {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app-carousel .rn-carousel-indicator span {
+  line-height: 10px;
+  display: inline-block;
+  color: #442195;
+  height: 10px;
+  font-size: 22px;
+}
+.app-carousel .rn-carousel-indicator span + span {
+  margin-left: 18px;
+}
+
+.app-carousel .rn-carousel-indicator span.active {
+  color: #AEA0D1;
+  cursor: default;
 }
