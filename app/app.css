@@ -192,3 +192,54 @@ ul[rn-carousel] {
   color: #AEA0D1;
   cursor: default;
 }
+
+.app-constructor {
+  margin-top: 15px;
+}
+
+.app-constructor__top {
+  background-color: #2E0088;
+  padding-top: 80px;
+}
+
+.app-constructor__select {
+  position: relative;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.ui.image.app-constructor__select__hover, 
+.ui.image.app-constructor__select__hover_bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 500ms ease-out, opacity 500ms ease-in;
+}
+
+.ui.image.app-constructor__select__hover_bg {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.app-constructor__select:hover + .ui.image.app-constructor__select__hover_bg {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.77);
+}
+
+.app-constructor__select:hover + .ui.image.app-constructor__select__hover_bg + .ui.image.app-constructor__select__hover {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.app-constructor__select__text {
+  position: absolute;
+  top: 65%;
+  right: 15%;
+  transform: rotate(-90deg); 
+  color: #C8102E !important;
+  font-size: 20px;
+}

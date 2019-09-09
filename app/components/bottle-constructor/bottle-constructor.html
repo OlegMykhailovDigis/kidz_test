@@ -1,1 +1,17 @@
-<h2>bottle-constructor</h2>
+<div class="app-constructor">
+    <div class="app-constructor__top">
+        <div class="ui two column centered grid">
+            <div class="four column centered row app-constructor__selector" style="padding-bottom: 0">
+                <div class="column" ng-repeat="bottle in bottleTypes" ng-mouseover="onTypeSelect(bottle.type)">
+                    <div class="app-constructor__select">
+                        <img class="ui image big" ng-src="{{bottle.srcDefault}}" alt="AS-ASW58800">
+                        <span class="app-constructor__select__text">{{bottle.name}}</span>
+                    </div>
+                    <img class="ui image app-constructor__select__hover_bg" src="../../assets/images/bg-bottle.png">
+                    <img class="ui image app-constructor__select__hover" ng-src="{{bottle.srcActive}}"
+                        alt="AS-ASW58800">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
