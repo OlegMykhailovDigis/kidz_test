@@ -4,7 +4,8 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.main',
-  'myApp.view2'
+  'myApp.view2',
+  'angular-carousel'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   // $locationProvider.hashPrefix('!');

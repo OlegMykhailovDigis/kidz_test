@@ -23,12 +23,13 @@ body {
   top: -1px;
   left: 0;
   right: 0;
-  height: 300px;
+  /* height: 300px; */
   background-image: url('./assets/images/bg-navbar.png');
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: -1;
 }
+
+
 
 .app-header .app-header__avatar {
   position: relative;
@@ -36,17 +37,21 @@ body {
   padding: 4px;
 }
 .app-header .app-header__avatar:before {
-  content: '';
+  /* content: ''; */
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('./assets//images//avatar-mask.png');
+  /* background-image: url('./assets//images//avatar-mask.png'); */
 }
 
+.app-header .menu {
+  z-index: 5;
+}
 .app-header .ui.text.menu {
   margin: 0 -0.5em;
+  z-index: 5;
 }
 
 .app-header .right.inverted.text.menu a.item:hover > *{
@@ -99,4 +104,68 @@ body {
 }
 .app-header .ui.horizontal.list > .item + .item {
   margin-left: 0;
+}
+
+.app-header .app-header__background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.app-header .app-header__background img{
+  width: 100%;
+  min-width: 900px;
+}
+
+ul[rn-carousel] {
+  height: calc(100vw / 2.66);
+}
+
+.app-carousel {
+  position: relative;
+}
+.app-carousel ul[rn-carousel] {
+  height: calc(100vw / 2.66);
+}
+
+.app-carousel .rn-carousel-control.rn-carousel-control-next:before {
+  content: url('./assets/images/ic-next-banner.png');
+}
+.app-carousel .rn-carousel-control.rn-carousel-control-next{
+  right: 13%;
+}
+.app-carousel .rn-carousel-control.rn-carousel-control-prev:before {
+  content: url('./assets/images/ic-prev-banner.png');
+}
+.app-carousel .rn-carousel-control.rn-carousel-control-prev {
+  left: 13%;
+}
+
+.app-carousel .layer {
+  position: relative;
+}
+
+.app-carousel .layer__content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  max-width: 27%;
+}
+
+.app-carousel .layer__content .ui.header {
+  /* text-transform: uppercase; */
+}
+.app-carousel .layer__content h2.ui.header {
+  font-family: 'affogatobold' !important;
+  text-transform: uppercase;
+  color: #C8102E !important;
+  font-size: 2.92em;
+  letter-spacing: -0.5px;
+}
+
+.app-carousel .layer__content h3.ui.header {
+  font-family: 'affogatobold' !important;
+  font-size: 2.3em;
+  letter-spacing: -0.5px;
 }
