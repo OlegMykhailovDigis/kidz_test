@@ -12,5 +12,4 @@ angular.module('myApp.main', ['ngRoute'])
 .controller('MainCtrl', ['$scope', function($scope) {
   var $ = jQuery;
 
-  console.log($('.container'));
 }]);
