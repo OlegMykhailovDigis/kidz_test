@@ -1,0 +1,38 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'affogatobold';
+@fontSmoothing     : antialiased;
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+
+@fontWeight: bold;
+@textTransform: none;
+
+/* HTML Headings */
+@h1: 2.58rem;
+@h2: 1.8rem;
+@h3: 1.29rem;
+@h4: 0.9rem;
+@h5: 0.8rem;
+
+/* Sizing */
+@hugeFontSize: 2.58em;
+@largeFontSize: 1.8em;
+@mediumFontSize: 1.29em;
+@smallFontSize: 0.9em;
+@tinyFontSize: 0.8em;
+
+/*---  Colors  ---*/
+@red              : #F45274;
+@blue             : #1F6FCF;
+@purple           : #A333C8;
+@violet           : #2E0088;

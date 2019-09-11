@@ -1,0 +1,60 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+/*******************************
+            Button
+*******************************/
+/*-------------------
+       Element
+--------------------*/
+@borderRadius: @circularRadius;
+@textTransform: uppercase;
+@backgroundColor: rgba(0, 0, 0, 0);
+@backgroundImage: none;
+@fontWeight: bold;
+@textColor: #FFFFFF;
+@boxShadow: none;
+
+/* Padding */
+@verticalPadding: 1.25em;
+@horizontalPadding: 1em;
+
+/* Icon */
+@iconOpacity: 0.8;
+@iconDistance: 0.4em;
+@iconTransition: opacity @defaultDuration @defaultEasing;
+@iconMargin: 0em @iconDistance 0em -(@iconDistance / 2);
+@iconVerticalAlign: top;
+
+/*-------------------
+        Group
+--------------------*/
+
+@verticalBoxShadow: 0px 0px 0px 1px @borderColor inset;
+
+
+/*-------------------
+        States
+--------------------*/
+
+@hoverBackgroundColor: #FFFFFF;
+@hoverBackgroundImage: none;
+@hoverBoxShadow: none;
+
+@downBackgroundColor: #F0F0F0;
+@downBackgroundImage: none;
+@downBoxShadow: none;
+
+@activeBackgroundColor: #DDDDDD;
+@activeBackgroundImage: none;
+@activeBoxShadow: none;
+
+@loadingBackgroundColor: #FFFFFF;
+
+
+
+
+
+@primaryColor: #FFFFFF;
+@primaryTextColor: @violet;
+@primaryBoxShadow: @coloredBoxShadow;
