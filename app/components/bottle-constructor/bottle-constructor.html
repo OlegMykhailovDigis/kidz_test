@@ -15,8 +15,17 @@
         </div>
     </div>
     <div class="app-constructor__bottom">
+        <div class="ui container pt-100">
+            <div class="ui two column centered grid">
+                <div class="column">
+                        <h3 class="ui header huge inverted aligned center">
+                            KIDZTIME Classic sipper
+                            <div class="sub header">Transition well from toddler sippy cup to the big kids' world with our classic sippers. Strudy, Safe, Speils & Fuss proof.</div>
+                        </h3>
+                </div>
+            </div>
+        </div>
         <div class="ui container swiper" style="padding-top: 50px">
-            <!-- Slider main container -->
             <div class="swiper__top">
                 <div class="swiper__controls">
                     <h3 class="ui header large inverted">Change the cap</h3>
@@ -25,19 +34,23 @@
                         <button id="nextTop" class="ui button"><i class="play icon"></i></button>
                     </div>
                 </div>
-                <div id="swiperTop" class="swiper-container">
+                <div id="swiperTop"
+                    class="swiper-container"
+                    ng-class="{'swiper-container_nozzle': selectedType.type === 'nozzle_on'}">
                     <div class="swiper-wrapper" ng-if="bottleCaps.length">
                         <div class="swiper-slide" ng-repeat="cap in bottleCaps">
-                            <img ng-src="{{cap.image}}" alt="{{cap.id}}" />
+                            <img class="ui medium image" ng-src="{{cap.image}}" alt="{{cap.id}}" />
                         </div>
                     </div>
                 </div>
             </div>
             <div class="swiper__bottom">
-                <div id="swiperBottom" class="swiper-container">
+                <div id="swiperBottom"
+                    class="swiper-container"
+                    ng-class="{'swiper-container_nozzle': selectedType.type === 'nozzle_on'}">
                     <div class="swiper-wrapper" ng-if="bottleBodies.length">
                         <div class="swiper-slide" ng-repeat="body in bottleBodies">
-                            <img ng-src="{{body.image}}" alt="{{body.id}}" />
+                            <img class="ui medium image" ng-src="{{body.image}}" alt="{{body.id}}" />
                         </div>
                     </div>
                 </div>
@@ -51,7 +64,7 @@
             </div>
         </div>
         <div class="ui container app-constructor__button">
-            <button class="ui button primary small"><i class="plus icon"></i> Add to card</button>
+            <button ng-click="addToCard()" class="ui button primary small"><i class="plus icon"></i> Add to card</button>
         </div>
     </div>
 </div>

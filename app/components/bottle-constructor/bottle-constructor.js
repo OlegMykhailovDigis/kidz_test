@@ -1,16 +1,17 @@
 'use strict';
 
 angular.
-  	module('myApp').
-  	component('appBottleConstructor', {
-	templateUrl: 'components/bottle-constructor/bottle-constructor.html',
-    	controller: 'BottleConstructorCtrl' 
-  	})
-  	.controller('BottleConstructorCtrl', ['$scope', function($scope) {
-
+	module('myApp').
+	component('appBottleConstructor', {
+		templateUrl: 'components/bottle-constructor/bottle-constructor.html',
+		controller: 'BottleConstructorCtrl'
+	})
+	.controller('BottleConstructorCtrl', ['$scope', function ($scope) {
+		// bottleCaps - used for caps slider
 		$scope.bottleCaps = undefined;
+		// bottleBodies - used for bodies slider
 		$scope.bottleBodies = undefined;
-
+		// General Bottle Types - Classic, Nozzle, Sporty
 		$scope.bottleTypes = [
 			{
 				type: 'classic',
@@ -29,70 +30,68 @@ angular.
 				srcActive: 'assets/images/bottles/DM-DMW42300-01.png'
 			}
 		];
-		
+		// Mocked Data start
 		$scope.classicCaps = [
-			{id: 'AS-ASW58800-CAP', image: './assets/images/bottles/AS-ASW58800-CAP.png'},
-			{id: 'DM-DMW58802-CAP', image: './assets/images/bottles/DM-DMW58802-CAP.png'},
-			{id: 'DSC_1657-CAP', image: './assets/images/bottles/DSC_1657-CAP.png'},
-			{id: 'DSC_1667-CAP', image: './assets/images/bottles/DSC_1667-CAP.png'},
-			{id: 'ADSC_1670-CAP', image: './assets/images/bottles/DSC_1670-CAP.png'},
+			{ id: 'AS-ASW58800-CAP', image: './assets/images/bottles/AS-ASW58800-CAP.png' },
+			{ id: 'DM-DMW58802-CAP', image: './assets/images/bottles/DM-DMW58802-CAP.png' },
+			{ id: 'DSC_1657-CAP', image: './assets/images/bottles/DSC_1657-CAP.png' },
+			{ id: 'DSC_1667-CAP', image: './assets/images/bottles/DSC_1667-CAP.png' },
+			{ id: 'ADSC_1670-CAP', image: './assets/images/bottles/DSC_1670-CAP.png' },
 		];
 		$scope.classicBodies = [
-			{id: 'AS-ASW58800-BODY', image:'./assets/images/bottles/AS-ASW58800-BODY.png'},
-			{id: 'DM-DMW58802-BODY', image:'./assets/images/bottles/DM-DMW58802-BODY.png'},
-			{id: 'DSC_1657-BODY', image:'./assets/images/bottles/DSC_1657-BODY.png'},
-			{id: 'DSC_1667-BODY', image:'./assets/images/bottles/DSC_1667-BODY.png'},
-			{id: 'DSC_1670-BODY', image:'./assets/images/bottles/DSC_1670-BODY.png'},
+			{ id: 'AS-ASW58800-BODY', image: './assets/images/bottles/AS-ASW58800-BODY.png' },
+			{ id: 'DM-DMW58802-BODY', image: './assets/images/bottles/DM-DMW58802-BODY.png' },
+			{ id: 'DSC_1657-BODY', image: './assets/images/bottles/DSC_1657-BODY.png' },
+			{ id: 'DSC_1667-BODY', image: './assets/images/bottles/DSC_1667-BODY.png' },
+			{ id: 'DSC_1670-BODY', image: './assets/images/bottles/DSC_1670-BODY.png' },
 		];
-
 		$scope.nozzleCaps = [
-			{id: 'DM-DMW42300-CAP', image:'./assets/images/bottles/DM-DMW42300-CAP.png'},
-			{id: 'DSC_1850-CAP', image:'./assets/images/bottles/DSC_1850-CAP.png'},
-			{id: 'NL-NLW42300-CAP', image:'./assets/images/bottles/NL-NLW42300-CAP.png'},
-			{id: 'PM-PMW42301-CAP', image:'./assets/images/bottles/PM-PMW42301-CAP.png'},
-			{id: 'PP-PPW42301-CAP', image:'./assets/images/bottles/PP-PPW42301-CAP.png'},
+			{ id: 'DM-DMW42300-CAP', image: './assets/images/bottles/DM-DMW42300-CAP.png' },
+			{ id: 'DSC_1850-CAP', image: './assets/images/bottles/DSC_1850-CAP.png' },
+			{ id: 'NL-NLW42300-CAP', image: './assets/images/bottles/NL-NLW42300-CAP.png' },
+			{ id: 'PM-PMW42301-CAP', image: './assets/images/bottles/PM-PMW42301-CAP.png' },
+			{ id: 'PP-PPW42301-CAP', image: './assets/images/bottles/PP-PPW42301-CAP.png' },
 		];
 		$scope.nozzleBodies = [
-			{id: 'DM-DMW42300-BODY', image:'./assets/images/bottles/DM-DMW42300-BODY.png'},
-			{id: 'DSC_1850-BODY', image:'./assets/images/bottles/DSC_1850-BODY.png'},
-			{id: 'NL-NLW42300-BODY', image:'./assets/images/bottles/NL-NLW42300-BODY.png'},
-			{id: 'PM-PMW42301-BODY', image:'./assets/images/bottles/PM-PMW42301-BODY.png'},
-			{id: 'PP-PPW42301-BODY', image:'./assets/images/bottles/PP-PPW42301-BODY.png'},
+			{ id: 'DM-DMW42300-BODY', image: './assets/images/bottles/DM-DMW42300-BODY.png' },
+			{ id: 'DSC_1850-BODY', image: './assets/images/bottles/DSC_1850-BODY.png' },
+			{ id: 'NL-NLW42300-BODY', image: './assets/images/bottles/NL-NLW42300-BODY.png' },
+			{ id: 'PM-PMW42301-BODY', image: './assets/images/bottles/PM-PMW42301-BODY.png' },
+			{ id: 'PP-PPW42301-BODY', image: './assets/images/bottles/PP-PPW42301-BODY.png' },
 		];
-
 		$scope.sportyCaps = [];
 		$scope.sportyBodies = [];
+		// Mocked Data end
 
-		var generateSwiperProps = function(location) {
+		// generateSwiperProps return obeject of properties for slider
+		// initialization
+		var generateSwiperProps = function (location) {
 			return {
 				slidesPerView: 3,
 				speed: 1000,
-				spaceBetween: 80,
+				spaceBetween: 105,
 				effect: 'coverflow',
 				centeredSlides: true,
 				loop: true,
-				loopFillGroupWithBlank: true,
-				observeSlideChildren: true,
 				coverflowEffect: {
 					rotate: 0,
-					stretch: 0,
-					depth: 290,
-					modifier: 1,
+					stretch: 15,
+					depth: 100,
+					modifier: 2,
 					slideShadows: false
 				},
 				navigation: {
-				  nextEl: '#next' + location,
-				  prevEl: '#prev' + location,
+					nextEl: '#next' + location,
+					prevEl: '#prev' + location,
 				},
 			};
 		};
-
-		var init = function() {
+		// On Init method
+		var init = function () {
 			if (!$scope.selectedType) {
-				$scope.selectedType = $scope.bottleTypes[0];
+				$scope.selectedType = $scope.bottleTypes[1];
 			}
-			$scope.bottleCaps = [];
-			$scope.bottleBodies = [];
+
 			if ($scope.selectedType.type === 'classic') {
 				$scope.bottleCaps = $scope.classicCaps;
 				$scope.bottleBodies = $scope.classicBodies;
@@ -103,10 +102,12 @@ angular.
 				// TODO Init 'sporty' swiper
 			}
 		};
-
-		$scope.onTypeSelect = function(type) {
+		// Watch bottle types selector to choose wich type of bottle to render 
+		// in slider
+		$scope.onTypeSelect = function (type) {
+			if (type === 'sporty') return;
 			if ($scope.selectedType.type !== type) {
-				$scope.bottleTypes.forEach(function(t) {
+				$scope.bottleTypes.forEach(function (t) {
 					if (t.type === type) {
 						$scope.selectedType = t;
 					}
@@ -114,19 +115,39 @@ angular.
 				});
 			}
 		};
-
+		$scope.addToCard = function() {
+			console.log($scope.selectedType);
+			console.log($scope.capsSwiper.realIndex);
+			console.log($scope.bodySwiper.realIndex);
+		};
+		// Sliders initialization
+		var initSliders = function () {
+			// $scope.showSlider = true;
+			$scope.capsSwiper = new Swiper('#swiperTop', generateSwiperProps('Top'));
+			$scope.bodySwiper = new Swiper('#swiperBottom', generateSwiperProps('Bottom'));
+		};
 		angular.element(document).ready(function () {
-			$scope.swiper2 = new Swiper('#swiperTop', generateSwiperProps('Top'));
-			$scope.swiper1 = new Swiper('#swiperBottom', generateSwiperProps('Bottom'));
+			initSliders();
 		});
-
-		$scope.$watch('selectedType', function(newVal, oldVal) {
+		$scope.$watch('selectedType', function (newVal, oldVal) {
 			init();
-			if ($scope.swiper1 && $scope.swiper2) {
-				$scope.swiper1.updateSlides();
-				$scope.swiper2.updateSlides();
+			if ($scope.bodySwiper && $scope.capsSwiper) {
+				$scope.capsSwiper.destroy();
+				$scope.capsSwiper = undefined;
+				$scope.bodySwiper.destroy();
+				$scope.bodySwiper = undefined;
+
+				setTimeout(function(){ 
+					initSliders();
+				}, 0);
 			}
 		});
+		
+		// $scope.showSlider = true;
+
+		// $scope.sliderIsShown = function() {
+		// 	return $scope.showSlider;
+		// };
 
 		init();
-}]);
+	}]);
