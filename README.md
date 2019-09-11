@@ -59,6 +59,9 @@ For more information on AngularJS please check out [angularjs.org][angularjs].
 
 To build Semantic UI run next script from `app/assets/semantic-ui`. 
 ```
+npm install
+```
+```
 gulp build
 ```
 
