@@ -1,7 +1,9 @@
 logs/*
 !.gitkeep
 node_modules/
-app/lib/
+app/lib
+app/assets/semantic-ui/dist/
+app/assets/semantic-ui/_examples/
 tmp
 .DS_Store
 .idea
