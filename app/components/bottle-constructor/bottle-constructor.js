@@ -7,6 +7,22 @@ angular.
 		controller: 'BottleConstructorCtrl'
 	})
 	.controller('BottleConstructorCtrl', ['$scope', function ($scope) {
+		$scope.constructorTitles = {
+			classic: {
+				header: 'KIDZTIME Classic sipper',
+				subheader: 'Transition well from toddler sippy cup to the big kids\' world with our classic sippers. Strudy, Safe, Speils & Fuss proof.'
+			}, 
+			nozzle_on: {
+				header: 'KIDZTIME Original Nozzlers',
+				subheader: 'For the older kiddos, whether for the school, for the playground or for the weekend - our Classic Nozzlers have never llost their charm.'
+			}
+		};
+		$scope.getTitle = function(type) {
+			if (!type) {
+				return $scope.constructorTitles['classic']
+			}
+			return $scope.constructorTitles[type];
+		};
 		// bottleCaps - used for caps slider
 		$scope.bottleCaps = undefined;
 		// bottleBodies - used for bodies slider
@@ -89,7 +105,7 @@ angular.
 		// On Init method
 		var init = function () {
 			if (!$scope.selectedType) {
-				$scope.selectedType = $scope.bottleTypes[1];
+				$scope.selectedType = $scope.bottleTypes[0];
 			}
 
 			if ($scope.selectedType.type === 'classic') {
